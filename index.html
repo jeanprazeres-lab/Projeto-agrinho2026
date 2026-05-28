@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte: Fazenda em Equilíbrio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🌱 Agro Forte</div>
+        <ul>
+            <li><a href="#" onclick="showPage('simulador')">Simulador</a></li>
+            <li><a href="#" onclick="showPage('sobre-mim')">Sobre Mim</a></li>
+            <li><a href="#" onclick="showPage('agrinho')">Sobre o Agrinho</a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <section id="simulador" class="page active">
+            <h1>Fazenda em Equilíbrio</h1>
+            <p>Tome as decisões corretas para manter sua fazenda lucrativa e o meio ambiente saudável!</p>
+            
+            <div class="game-dashboard">
+                <div class="status-box">
+                    <label>💰 Produção/Lucro</label>
+                    <div class="progress-bar"><div id="bar-lucro" class="fill" style="width: 50%;">50%</div></div>
+                </div>
+                <div class="status-box">
+                    <label>🌳 Saúde Ambiental</label>
+                    <div class="progress-bar"><div id="bar-amb" class="fill" style="width: 50%;">50%</div></div>
+                </div>
+                <div class="status-box">
+                    <label>💵 Orçamento Atual:</label>
+                    <div id="orcamento">R$ 10.000</div>
+                </div>
+            </div>
+
+            <div class="game-area">
+                <h2 id="dilema-titulo">Dia 1: O Início</h2>
+                <p id="dilema-texto">Você acabou de herdar esta terra. Qual será sua estratégia inicial de plantio?</p>
+                
+                <div class="options" id="opcoes-container">
+                    </div>
+                
+                <div id="feedback-msg" class="feedback"></div>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="page">
+            <h1>Sobre Mim</h1>
+            <div class="content-box">
+                <p>Olá! Eu sou <strong>[Seu Nome Aqui]</strong>.</p>
+                <p>Sou estudante/desenvolvedor apaixonado por tecnologia e sustentabilidade. Criei este projeto porque acredito que o futuro da nossa agricultura depende de inovação aliada à preservação ambiental.</p>
+                <p>O agronegócio é o motor do nosso país, mas para que ele seja forte amanhã, precisamos cuidar da terra hoje.</p>
+                </div>
+        </section>
+
+        <section id="agrinho" class="page">
+            <h1>O Programa Agrinho</h1>
+            <div class="content-box">
+                <p>O <strong>Programa Agrinho</strong> é a maior iniciativa de responsabilidade social do Sistema FAEP/SENAR-PR (e de outras federações estaduais).</p>
+                <p>Ele leva propostas pedagógicas para as escolas, baseadas em temas como ética, saúde, meio ambiente, trabalho e consumo, visando formar cidadãos mais conscientes.</p>
+                <p>Este site foi desenvolvido inspirado nos valores do programa, demonstrando de forma prática e interativa como a teoria da sala de aula se aplica aos desafios reais de um produtor rural que busca uma agricultura sustentável.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Programa Agrinho - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
