@@ -1,4 +1,6 @@
-/* Reset básico */
+/* ==========================================
+   1. RESET E ESTILOS BASE
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,9 @@ body {
     min-height: 100vh;
 }
 
-/* Navegação */
+/* ==========================================
+   2. NAVEGAÇÃO
+   ========================================== */
 nav {
     background-color: #2c5e1a;
     color: white;
@@ -22,7 +26,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo {
@@ -47,23 +51,15 @@ nav a:hover {
     color: #a8e6cf;
 }
 
-/* Estrutura Principal */
+/* ==========================================
+   3. ESTRUTURA PRINCIPAL
+   ========================================== */
 main {
     flex: 1;
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
-}
-
-/* Páginas da SPA */
-.page {
-    display: none;
-    animation: fadeIn 0.5s ease;
-}
-
-.page.active {
-    display: block;
 }
 
 h1 {
@@ -73,12 +69,37 @@ h1 {
     padding-bottom: 0.5rem;
 }
 
-/* Simulador (Game) */
+/* ==========================================
+   4. PÁGINAS DA SPA & ANIMAÇÕES
+   ========================================== */
+.page {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   5. SIMULADOR (GAME DASHBOARD)
+   ========================================== */
 .game-dashboard {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
@@ -109,13 +130,4 @@ h1 {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: bold;
-    transition: width 0.5s ease, background-color 0.5s ease;
-}
-
-#bar-lucro { background-color: #f1c40f; }
-#bar-amb { background-color: #27ae60; }
-#orcamento
+    justify-content:
